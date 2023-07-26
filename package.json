@@ -18,7 +18,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "webpack --mode development serve --config webpack.development.config.mjs",
+		"build": "webpack serve --config webpack.development.config.mjs",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"formate": "exec prettier . --write"
@@ -45,6 +45,7 @@
 		"@babel/preset-env": "^7.22.9",
 		"@babel/preset-react": "^7.22.5",
 		"@babel/preset-typescript": "^7.22.5",
+		"@webpack-cli/serve": "^2.0.5",
 		"babel-loader": "^9.1.3",
 		"css-loader": "^6.8.1",
 		"file-loader": "^6.2.0",
