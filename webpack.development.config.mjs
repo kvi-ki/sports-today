@@ -1,14 +1,14 @@
-import path from 'node:path';
-import fileUrl from 'file-url';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const __dirname = path.dirname(fileUrl(import.meta.url));
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const Config = {
     mode: 'development',
     entry: './src/index.tsx',
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.join(__dirname, 'dist'),
         filename: '[name].[contenthash].js',
         clean: true
     },

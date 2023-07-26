@@ -2,6 +2,7 @@
 	"name": "sports-today",
 	"version": "0.1.0",
 	"private": true,
+	"type": "module",
 	"dependencies": {
 		"@testing-library/jest-dom": "^5.17.0",
 		"@testing-library/react": "^13.4.0",
@@ -10,7 +11,6 @@
 		"@types/node": "^16.18.38",
 		"@types/react": "^18.2.15",
 		"@types/react-dom": "^18.2.7",
-		"file-url": "^4.0.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-scripts": "5.0.1",
@@ -18,7 +18,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "webpack --mode development -open --config webpack.development.config.mjs",
+		"build": "webpack --mode development serve --config webpack.development.config.mjs",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"formate": "exec prettier . --write"
