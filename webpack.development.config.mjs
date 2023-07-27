@@ -17,19 +17,27 @@ const Config = {
   },
   module: {
     rules: [
-      { test: /\.css$/, use: ['style-loader', 'css-loader'] },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
+      },
       {
         test: /\.(js|jsx|tsx|ts)$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loader: 'babel-loader'
       },
-      { test: /\.(png|svg|jpe?g|gif)$/, use: [{ loader: 'file-loader' }] },
+      {
+        test: /\.(png|svg|jpe?g|gif)$/,
+        use: [{ loader: 'file-loader' }]
+      },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Deportes Hoy',
       filename: 'index.html',
+      //template: path.resolve('./src/index.tsx'),
+      inject: 'body'
     }),
   ],
 };
