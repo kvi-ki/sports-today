@@ -20,7 +20,7 @@
         __webpack_require__
       ) {
         eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/.pnpm/react@18.2.0/node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _logo_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./logo.svg */ "./src/logo.svg");\n/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.css */ "./src/App.css");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js");\n\n\n\n\n\nfunction App() {\n  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {\n    className: "App",\n    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("header", {\n      className: "App-header",\n      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("img", {\n        src: _logo_svg__WEBPACK_IMPORTED_MODULE_1__["default"],\n        className: "App-logo",\n        alt: "logo"\n      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)("p", {\n        children: ["Edit ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("code", {\n          children: "src/App.tsx"\n        }), " and save to reload."]\n      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("a", {\n        className: "App-link",\n        href: "https://reactjs.org",\n        target: "_blank",\n        rel: "noopener noreferrer",\n        children: "Learn React"\n      })]\n    })\n  });\n}\n/* harmony default export */ __webpack_exports__["default"] = (App);\n\n//# sourceURL=webpack://sports-today/./src/App.tsx?'
+          '__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/.pnpm/react@18.2.0/node_modules/react/index.js");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.css */ "./src/App.css");\n/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/.pnpm/react@18.2.0/node_modules/react/jsx-runtime.js");\n\n\n\n\nfunction App() {\n  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {\n    className: "App",\n    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("header", {\n      className: "App-header",\n      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)("p", {\n        children: ["Edit ", /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("code", {\n          children: "src/App.tsx"\n        }), " and save to reload."]\n      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("a", {\n        className: "App-link",\n        href: "https://reactjs.org",\n        target: "_blank",\n        rel: "noopener noreferrer",\n        children: "Learn React"\n      })]\n    })\n  });\n}\n/* harmony default export */ __webpack_exports__["default"] = (App);\n\n//# sourceURL=webpack://sports-today/./src/App.tsx?'
         );
 
         /***/
@@ -85,22 +85,6 @@
       /***/ function (module) {
         eval(
           '\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://sports-today/./node_modules/.pnpm/css-loader@6.8.1_webpack@5.88.2/node_modules/css-loader/dist/runtime/noSourceMaps.js?'
-        );
-
-        /***/
-      },
-
-    /***/ './src/logo.svg':
-      /*!**********************!*\
-  !*** ./src/logo.svg ***!
-  \**********************/
-      /***/ function (
-        __unused_webpack_module,
-        __webpack_exports__,
-        __webpack_require__
-      ) {
-        eval(
-          '__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "6ce24c58023cc2f8fd88fe9d219db6c6.svg");\n\n//# sourceURL=webpack://sports-today/./src/logo.svg?'
         );
 
         /***/
@@ -397,22 +381,6 @@
     /******/
   })();
   /******/
-  /******/ /* webpack/runtime/global */
-  /******/ !(function () {
-    /******/ __webpack_require__.g = (function () {
-      /******/ if (typeof globalThis === 'object') return globalThis;
-      /******/ try {
-        /******/ return this || new Function('return this')();
-        /******/
-      } catch (e) {
-        /******/ if (typeof window === 'object') return window;
-        /******/
-      }
-      /******/
-    })();
-    /******/
-  })();
-  /******/
   /******/ /* webpack/runtime/hasOwnProperty shorthand */
   /******/ !(function () {
     /******/ __webpack_require__.o = function (obj, prop) {
@@ -445,38 +413,6 @@
       /******/ return module;
       /******/
     };
-    /******/
-  })();
-  /******/
-  /******/ /* webpack/runtime/publicPath */
-  /******/ !(function () {
-    /******/ var scriptUrl;
-    /******/ if (__webpack_require__.g.importScripts)
-      scriptUrl = __webpack_require__.g.location + '';
-    /******/ var document = __webpack_require__.g.document;
-    /******/ if (!scriptUrl && document) {
-      /******/ if (document.currentScript)
-        /******/ scriptUrl = document.currentScript.src;
-      /******/ if (!scriptUrl) {
-        /******/ var scripts = document.getElementsByTagName('script');
-        /******/ if (scripts.length) {
-          /******/ var i = scripts.length - 1;
-          /******/ while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
-          /******/
-        }
-        /******/
-      }
-      /******/
-    }
-    /******/ // When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-    /******/ // or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-    /******/ if (!scriptUrl)
-      throw new Error('Automatic publicPath is not supported in this browser');
-    /******/ scriptUrl = scriptUrl
-      .replace(/#.*$/, '')
-      .replace(/\?.*$/, '')
-      .replace(/\/[^\/]+$/, '/');
-    /******/ __webpack_require__.p = scriptUrl;
     /******/
   })();
   /******/

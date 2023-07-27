@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "webpack serve --config webpack.development.config.mjs",
+    "build": "webpack --config webpack.development.config.mjs",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "formate": "exec prettier . --write"
