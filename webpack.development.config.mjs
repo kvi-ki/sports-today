@@ -12,6 +12,13 @@ const Config = {
     filename: '[name].[contenthash].js',
     clean: true,
   },
+  devtool: 'inline-source-map',
+  devServer: {
+    static: path.join(__dirname, 'dist'),
+    port: 5001,
+    open: true,
+    hot: true
+  },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.mjs', '.json'],
   },
@@ -22,7 +29,7 @@ const Config = {
         use: ['style-loader', 'css-loader']
       },
       {
-        test: /\.(js|jsx|tsx|ts)$/,
+        test: /\.(js|ts)x?$/,
         exclude: /node_modules/,
         loader: 'babel-loader'
       },
@@ -36,7 +43,7 @@ const Config = {
     new HtmlWebpackPlugin({
       title: 'Deportes Hoy',
       filename: 'index.html',
-      template: path.resolve('./src/index.html'),
+      template: path.join(__dirname, 'src/index.html'),
       inject: 'body'
     }),
   ],
