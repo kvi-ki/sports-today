@@ -36,7 +36,7 @@ const Config = {
     new HtmlWebpackPlugin({
       title: 'Deportes Hoy',
       filename: 'index.html',
-      //template: path.resolve('./src/index.tsx'),
+      template: path.resolve('./src/index.html'),
       inject: 'body'
     }),
   ],

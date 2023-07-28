@@ -17,7 +17,7 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "start": "webpack serve --mode development --open",
+    "start": "webpack-dev-server --mode development --open",
     "build": "webpack --config webpack.development.config.mjs",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
