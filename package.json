@@ -21,7 +21,9 @@
     "build": "webpack --config webpack.development.config.mjs",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "formate": "exec prettier . --write"
+    "formate": "exec prettier . --write",
+    "lint": "eslint --quiet --fix",
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
