@@ -17,7 +17,7 @@ const Config = {
     static: path.join(__dirname, 'dist'),
     port: 5001,
     open: true,
-    hot: true
+    hot: 'only'
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.mjs', '.json']
