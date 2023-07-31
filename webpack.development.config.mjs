@@ -10,7 +10,7 @@ const Config = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].[contenthash].js',
-    clean: true,
+    clean: true
   },
   devtool: 'inline-source-map',
   devServer: {
@@ -20,7 +20,7 @@ const Config = {
     hot: true
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.mjs', '.json'],
+    extensions: ['.ts', '.tsx', '.js', '.mjs', '.json']
   },
   module: {
     rules: [
@@ -36,8 +36,8 @@ const Config = {
       {
         test: /\.(png|svg|jpe?g|gif)$/,
         use: [{ loader: 'file-loader' }]
-      },
-    ],
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -45,8 +45,8 @@ const Config = {
       filename: 'index.html',
       template: path.join(__dirname, 'src/index.html'),
       inject: 'body'
-    }),
-  ],
+    })
+  ]
 };
 
 export default Config;
