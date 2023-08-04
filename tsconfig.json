@@ -16,5 +16,11 @@
     "jsx": "react-jsx",
     "noEmit": true
   },
-  "include": ["src/**/*", "tests/*", "tests-examples/*"]
+  "include": [
+    "src/**/*",
+    "tests/*",
+    "tests-examples/*",
+    "tailwind.config.js",
+    "playwright.config.ts"
+  ]
 }
