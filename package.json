@@ -18,7 +18,7 @@
   "scripts": {
     "dev": "webpack serve --config webpack.development.config.mjs --open",
     "build": "webpack --config webpack.development.config.mjs",
-    "test": "react-scripts test",
+    "test": "exec playwright test",
     "eject": "react-scripts eject",
     "formate": "exec prettier . --write",
     "lint": "eslint --quiet --fix",
@@ -40,6 +40,7 @@
     "@babel/preset-env": "^7.22.9",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
+    "@playwright/test": "^1.36.2",
     "@typescript-eslint/eslint-plugin": "^6.2.0",
     "@typescript-eslint/parser": "^6.1.0",
     "@webpack-cli/serve": "^2.0.5",
