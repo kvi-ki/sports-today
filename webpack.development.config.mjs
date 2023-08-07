@@ -1,6 +1,8 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -26,7 +28,7 @@ const Config = {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
         test: /\.(js|ts)x?$/,
@@ -45,6 +47,9 @@ const Config = {
       filename: 'index.html',
       template: path.join(__dirname, 'src/index.html'),
       inject: 'body'
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css',
     })
   ]
 };
