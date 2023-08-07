@@ -17,6 +17,9 @@
     "plugin:react/jsx-runtime",
     "prettier"
   ],
+  "rules": {
+    "@typescript-eslint/no-floating-promises": "error"
+  },
   "overrides": [
     {
       "extends": ["plugin:@typescript-eslint/disable-type-checked"],
