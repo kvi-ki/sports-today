@@ -45,7 +45,8 @@ const Config = {
   optimization: {
     minimizer: [
       '...',
-      new CssMinimizerPlugin()]
+      new CssMinimizerPlugin()],
+    minimize: true
   },
   plugins: [
     new HtmlWebpackPlugin({
