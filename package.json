@@ -21,8 +21,7 @@
     "test": "exec playwright test",
     "eject": "react-scripts eject",
     "formate": "exec prettier . --write",
-    "lint": "eslint --quiet --fix",
-    "prepare": "husky install"
+    "lint": "eslint --quiet --fix"
   },
   "browserslist": {
     "production": [
@@ -54,7 +53,6 @@
     "eslint-plugin-react": "^7.33.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.3",
-    "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.27",
