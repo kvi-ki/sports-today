@@ -18,7 +18,7 @@ const Config = {
   devtool: 'inline-source-map',
   devServer: {
     static: path.join(__dirname, 'dist'),
-    port: 5001,
+    port: 8080,
     open: true,
     hot: 'only'
   },
@@ -29,7 +29,11 @@ const Config = {
     rules: [
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+        use: [
+          { loader: MiniCssExtractPlugin.loader },
+          { loader: 'css-loader' },
+          { loader: 'postcss-loader' }
+        ]
       },
       {
         test: /\.(js|ts)x?$/,
@@ -38,7 +42,9 @@ const Config = {
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
-        use: [{ loader: 'file-loader' }]
+        use: [
+          { loader: 'file-loader' }
+        ]
       }
     ]
   },
